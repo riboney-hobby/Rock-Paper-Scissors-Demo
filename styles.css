@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: dimgrey;
+}
+
+.results {
+    min-width: 40vw;
+    min-height: 40vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0.8rem 1rem 0.1rem black;
+}
+
+h1 {
+    background-color: aquamarine;
+    border: 5px solid black;
+    border-radius: 1rem;
+    box-shadow: 0.8rem 1rem 0.1rem black;
+    padding: 1rem;
+    margin: 0;
+}
+
+.moves {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10% 0rem;
+
+}
+
+.placeholder::before {
+    content: "N";
+    visibility: hidden;
+}
+
+i {
+    font-size: 8em;
+}
+
+.pMove {
+    padding-bottom: 2rem;
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.pMove i {
+    font-size: 10rem;
+}
+
+.cMove {
+    padding-bottom: 2rem;
+    transform: rotate(-90deg) scaleX(-1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cMove i {
+    font-size: 10rem;
+}
+
+.pMoveScissor {
+    padding-left: 0.5rem;
+    transform: rotate(180deg) scaleX(1) scaleY(-1);
+    transition: all 0.3s ease-out;
+}
+
+.pMoveScissor i {
+    font-size: 10rem;
+}
+
+.cMoveScissor {
+    padding-right: 0.5rem;
+    transform: rotate(-180deg) scaleX(-1) scaleY(-1);
+    transition: all 0.3s ease-out;
+}
+
+.cMoveScissor i {
+    font-size: 10rem;
+}
+
+.input {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input button {
+    border: 5px solid black;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: 0.1s linear;
+    position: relative;
+}
+
+.input button:before {
+    content: attr(data-label);
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+.input button:hover {
+    cursor: pointer;
+    background-color: black;
+    transition: 0.1s linear;
+}
+
+.input span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.1s linear;
+    color: black;
+    font-size: 1rem;
+}
+
+button:hover span {
+    transition: 0.1s linear;
+    color: aquamarine;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    transition: 0.1s ease-in;
+}
+
+.round {
+    width: 100%;
+}
+
+.round fieldset {
+    border: 5px solid black;
+    border-radius: 1rem;
+    box-shadow: 0.8rem 1rem 0.1rem black;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.round fieldset legend {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: black;
+    border-radius: 1rem;
+    color: aquamarine;
+}
+
+.scores {
+    display:flex;
+    justify-content: space-between;
+}
+
+.score {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.score p {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.score p + p {
+    border-bottom: 3px solid aquamarine;
+    border-right: 3px solid aquamarine;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0 black;
+    background-color: black;
+    color: aquamarine;
+    font-weight: 600;
+}
+
+.round-winner {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.round-winner h3 {
+    margin: 0;
+}
+
+.round-winner p {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+#winner {
+    border-bottom: 5px solid black;
+    margin: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+.hidden {
+    display: none;
+}
