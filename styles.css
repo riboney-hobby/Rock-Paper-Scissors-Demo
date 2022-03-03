@@ -16,6 +16,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
     background-color: dimgrey;
+    width: 375px;
+    height: 667px;
 }
 
 .results {
