@@ -1,6 +1,6 @@
-# Rock-Paper-Scissors-Demo
+<h1 align="center">Rock-Paper-Scissors</h1>
 
-_Rock-Paper-Scissors in HTML/CSS/JS_
+<p align="center"><i>Made with HTML/CSS/JS</i></p>
 
 ## Try it out
 
