@@ -1,4 +1,17 @@
 # Rock-Paper-Scissors-Demo
-Basic Rock-Paper-Scissors game in HTML/CSS/JS
 
-Its a WIP as I learn and improve my HTML/CSS/JS skills...
+_Rock-Paper-Scissors in HTML/CSS/JS_
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/14286113/160484750-4f446036-64d5-4951-956f-7e47999e5b4b.png)
+
+## Try it out
+
+- [link](https://riboney.github.io/Rock-Paper-Scissors-Demo/) 
+
+## Note
+
+- Doesn't work for mobile screens
+  - I think I will have to programmatically set the dimensions of the various elements using javascript
+  - Making it responsive for mobiles is a WIP
