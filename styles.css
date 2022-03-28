@@ -3,26 +3,26 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     background-color: dimgrey;
-    width: 375px;
-    height: 667px;
+    /* width: 375px; */
+    /* height: 700px; */
+    width: 50vmin;
+    height: 100vh;
 }
 
 .results {
-    min-width: 40vw;
-    min-height: 40vh;
+    /* min-width: 100%; */
+    /* min-height: 100%; */
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
@@ -150,6 +150,7 @@ button:hover span {
 
 .round {
     width: 100%;
+    height: 100%;
 }
 
 .round fieldset {
