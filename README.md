@@ -5,7 +5,6 @@
 ## Try it out
 
 - [link](https://riboney-hobby-projects.github.io/Rock-Paper-Scissors-Demo/) 
-- 
 
 ## Note
 
